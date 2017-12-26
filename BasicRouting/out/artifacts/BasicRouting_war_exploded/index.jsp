@@ -44,7 +44,7 @@
   </div>
 
   <div>
-    <a href="request-counting">Click here to get your UserID</a>    
+    <a href="request-counting">Click here to get your UserID</a>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   </body>
