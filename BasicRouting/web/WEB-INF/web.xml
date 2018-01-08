@@ -27,7 +27,6 @@
         <param-value>Kirirom Foundation</param-value>
     </context-param>
 
-
     <!--Servlet and its Mapping-->
     <servlet>
         <servlet-name>info</servlet-name>
