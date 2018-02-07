@@ -11,7 +11,7 @@
     <title>Success Page</title>
 </head>
 <body>
-    <h1>Welcome Home <%= request.getParameter("username") %></h1>
+    <h1>Welcome Home <%= session.getAttribute("username") %></h1>
     <a href="destroy.jsp"><button>Log Out</button></a>
 </body>
 </html>

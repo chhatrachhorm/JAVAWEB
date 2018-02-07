@@ -13,8 +13,8 @@
         out.print("Hello, Welcome Home!");
         HttpSession login_session = request.getSession();
         login_session.setAttribute("uid", username + pass);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/pages/success.jsp");
-        dispatcher.forward(request, response);
+        login_session.setAttribute("username", username);
+        response.sendRedirect("/pages/success.jsp");
     } else out.print("Access Denied");
 %>
 

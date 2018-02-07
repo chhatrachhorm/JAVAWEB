@@ -17,6 +17,6 @@
         login_session.setMaxInactiveInterval(0);
         response.sendRedirect("/");
     %>
-    <h1>Logged Out</h1>
+    <h1>Logging You Out</h1>
 </body>
 </html>
