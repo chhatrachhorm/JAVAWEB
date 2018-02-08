@@ -3,5 +3,5 @@ to view servlet java class that was generated from jsp
         go to: ~/.IntelliJ/system/tomcat/ProjectName/work
         then search: find . | grep "jsp_file."
     windows:
-            go to: C:\users\yourUsername\.IntelliJ/system/tomcat/ProjectName/work
-            then search for the file
+        go to: C:\users\yourUsername\.IntelliJ/system/tomcat/ProjectName/work
+        then search for the file
