@@ -12,6 +12,10 @@
 </head>
 <body>
     <h1>Welcome Home <%= session.getAttribute("username") %></h1>
+    <div>
+        <a href="hitcounter.jsp"> Click Here to Go to Global Counter </a>
+        <a href="usersessionid.jsp">Click Here to Go to Your Session ID Counter</a>
+    </div>
     <a href="destroy.jsp"><button>Log Out</button></a>
 </body>
 </html>
