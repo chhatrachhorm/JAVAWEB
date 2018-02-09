@@ -13,15 +13,15 @@
 <body>
     <h1>Welcome Home <%= session.getAttribute("username") %></h1>
     <div>
-        <a href="hitcounter.jsp">
-            <button>Click Here to Go to Global Counter</button>
-        </a><br>
-        <a href="usersessionid.jsp">
-            <button>Click Here to Go to Your Session ID Counter</button>
-        </a><br>
-        <a href="../excep/runtime.jsp">
-            <button>Click Here to Go to Runtime Exception</button>
-        </a>
+        <button><a href="hitcounter.jsp">
+            Click Here to Go to Global Counter
+        </a></button><br>
+        <button><a href="usersessionid.jsp">
+            Click Here to Go to Your Session ID Counter
+        </a></button><br>
+        <button><a href="../excepts/runtime.jsp">
+            Click Here to Go to Runtime Exception
+        </a></button>
     </div>
     <a href="destroy.jsp"><button>Log Out</button></a>
 </body>
