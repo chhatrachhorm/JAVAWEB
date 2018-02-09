@@ -1,6 +1,6 @@
 <%@ page import="model.User" %>
-<%@ page import="javax.jws.soap.SOAPBinding" %>
-<%@ page import="exceptions.InvalidInputDataException" %><%--
+<%@ page import="exceptions.InvalidInputDataException" %>
+<%--
   Created by IntelliJ IDEA.
   User: chhatrachhorm
   Date: 2/9/18
