@@ -7,7 +7,7 @@
   Time: 11:23 AM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page errorPage="../excepts/error.jsp" %>
+<%@ page errorPage="../error/runtimeerror.jsp" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     String username = request.getParameter("username");
@@ -17,6 +17,7 @@
     String email = request.getParameter("email");
     String dob = request.getParameter("dob");
     System.out.println("LOG: " + username + " " + password + " " + confirm_pass + " " + phone + " " + email + " " + dob);
+//    User u = new User(username, password, confirm_pass, dob, phone, email);
     try {
         User u = new User(username, password, confirm_pass, dob, phone, email);
         System.out.println("Added New User " + u.toString());
