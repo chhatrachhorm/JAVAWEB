@@ -1,6 +1,4 @@
-<%@ page import="model.User" %>
-<%@ page import="exceptions.InvalidInputDataException" %>
-<%--
+<%@ page import="model.User" %><%--
   Created by IntelliJ IDEA.
   User: chhatrachhorm
   Date: 2/9/18
@@ -21,7 +19,7 @@
         User u = new User(username, password, confirm_pass, dob, phone, email);
         System.out.println("Added New User " + u.toString());
         out.print("Added new user: " + u.toString());
-    } catch (InvalidInputDataException e) {
+    } catch (exceptions.InvalidInputDataException e) {
         String message = e.getMessage();
         System.out.println("New User Exception: " + message);
         out.print("New User Exception: " + message);

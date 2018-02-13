@@ -5,3 +5,13 @@ to view servlet java class that was generated from jsp
     windows:
         go to: C:\users\yourUsername\.IntelliJ/system/tomcat/ProjectName/work
         then search for the file
+to make jdbc connection work in tomcat (jdbc will work well in dev time, but it throws jdbc not found at runtime):
+    - download jdbc(mysql or oracle based on the database dialect)
+        option1) paste it into Project/web/WEB-INF/lib
+        option2(not recommended) paste it into path/tomcat/lib
+    - before getting the connection, add this line of code:
+        Class.forName("com.mysql.cj.jdbc.Driver"); // for mysql jdbc version 6+
+        // or Class.forName("com.mysql.jdbc.Driver"); // for mysql jdbc prior to version 6
+For MySQL Connection:
+    grant all on banking_system.* to 'tester'@'%'; // to give access right to username tester
+For any other library, make sure to paste in into Project/web/WEB-INF/lib

@@ -32,7 +32,7 @@
         <div>
             <h2>Has no account?</h2>
             <h3>Sign Up Now for Free</h3>
-            <form action="signup/validate.jsp" method="post">
+            <form action="registerUser" method="post">
                 <label>Username: <input type="text" name="username"></label><br>
                 <label>Password: <input type="password" name="password"></label><br>
                 <label>Confirm Password: <input type="password" name="confirm_pass"></label><br>

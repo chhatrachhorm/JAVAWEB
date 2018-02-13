@@ -2,7 +2,10 @@ package model;
 
 import exceptions.InvalidInputDataException;
 
+import java.sql.Connection;
 import java.sql.Date;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
@@ -60,6 +63,37 @@ public class User{
             error.add("Invalid Phone Number");
         if(!error.isEmpty())
             throw new InvalidInputDataException(error);
+
+    }
+    public static User registerUser(
+            String username,
+            String password,
+            String confirmPass,
+            String dob,
+            String phoneNumber,
+            String email,
+            Connection connection)throws InvalidInputDataException{
+        User user = new User(username, password, confirmPass, dob, phoneNumber, email);
+        PreparedStatement newUser;
+        String sql = "INSERT INTO users (username, email, password, phone_number) values (?, ?, ?, ?);";
+        try {
+            connection.setAutoCommit(false);
+            newUser = connection.prepareStatement(sql);
+            newUser.setString(1, user.getUsername());
+            newUser.setString(2, user.getEmail());
+            newUser.setString(3, PasswordHelper.hashPassword(user.getPassword()));
+            newUser.setString(4, user.getPhoneNumber());
+            newUser.execute();
+            connection.commit();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            try {
+                connection.rollback();
+            } catch (SQLException e1) {
+                e1.printStackTrace();
+            }
+        }
+        return user;
 
     }
 
