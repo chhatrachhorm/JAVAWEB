@@ -1,4 +1,5 @@
-<%--
+<%@ page import="java.util.Map" %>
+<%@ page import="model.JWTHelper" %><%--
   Created by IntelliJ IDEA.
   User: chhatrachhorm
   Date: 2/1/18
@@ -12,13 +13,21 @@
   </head>
   <body>
     <%
-        if(!session.isNew()){
-            if(session.getAttribute("uid") == null){
-                session.invalidate();
-                session.setMaxInactiveInterval(0);
-                response.sendRedirect("/");
-            }else response.sendRedirect("/pages/success.jsp");
+        System.out.println("Gone throw login filter");
+        String jwt = (String) session.getAttribute("jwtID");
+        if(session.getAttribute("jwtID") != null){
+            Map<String, Object> results = JWTHelper.validateToken(jwt);
+            System.out.println("JWT Result: " + results);
+            System.out.println("JWT TOKEN: " + results);
+            if(results.get("error") != null){
+                session.setAttribute("jwtID", null);
+            }else{
+                response.sendRedirect("/pages/success.jsp");
+            }
+        }else{
+            System.out.println("JWT NULL");
         }
+
     %>
     <main>
         <div>
@@ -26,6 +35,14 @@
             <form action="loginUser" method="post">
                 <label>Name: <input type="text" name="identifier"></label><br>
                 <label>Password: <input type="password" name="password"></label><br>
+                <%
+                    if(session.getAttribute("login-error") != null){ %>
+                    <strong style="color: red">
+                        <%= session.getAttribute("login-error")%>
+                    </strong><br>
+                <%
+                    }
+                %>
                 <button type="submit">Log in</button>
             </form>
         </div>

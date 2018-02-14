@@ -7,17 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da7035c9-a73a-41ee-9338-47b59e54f222" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/data/DBHelper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/model/JWTHelper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/server/LoginUser.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/JSPSD.iml" afterPath="$PROJECT_DIR$/JSPSD.iml" />
-      <change beforePath="$PROJECT_DIR$/src/filter/AuthFilter.java" afterPath="$PROJECT_DIR$/src/filter/AuthFilter.java" />
-      <change beforePath="$PROJECT_DIR$/src/model/User.java" afterPath="$PROJECT_DIR$/src/model/User.java" />
-      <change beforePath="$PROJECT_DIR$/src/server/AddUser.java" afterPath="$PROJECT_DIR$/src/server/AddUser.java" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JSPSD_war_exploded/WEB-INF/classes/server/LoginUser.class" afterPath="$PROJECT_DIR$/out/artifacts/JSPSD_war_exploded/WEB-INF/classes/server/LoginUser.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JSPSD_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JSPSD_war_exploded/index.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/production/JSPSD/server/LoginUser.class" afterPath="$PROJECT_DIR$/out/production/JSPSD/server/LoginUser.class" />
+      <change beforePath="$PROJECT_DIR$/src/server/LoginUser.java" afterPath="$PROJECT_DIR$/src/server/LoginUser.java" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/pages/validate.jsp" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,16 +36,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="validate.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/signup/validate.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="57" lean-forward="false" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="PasswordHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/PasswordHelper.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -73,11 +58,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginUser.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LoginUser.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/server/LoginUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="35" column="56" lean-forward="false" selection-start-line="35" selection-start-column="56" selection-end-line="35" selection-end-column="56" />
+            <state relative-caret-position="306">
+              <caret line="29" column="52" lean-forward="false" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JSPSD.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JSPSD.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -93,12 +88,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthFilter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AuthFilter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/filter/AuthFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="28" column="73" lean-forward="false" selection-start-line="28" selection-start-column="73" selection-end-line="28" selection-end-column="73" />
+            <state relative-caret-position="366">
+              <caret line="37" column="34" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="37" selection-end-column="34" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="132" column="28" lean-forward="true" selection-start-line="132" selection-start-column="28" selection-end-line="132" selection-end-column="28" />
+              <folding>
+                <element signature="method#checkDOB#0;class#User#0" expanded="false" />
+                <element signature="method#User#0;class#User#0" expanded="false" />
+                <element signature="method#validator#0;class#User#0" expanded="false" />
+                <marker date="1518537863594" expanded="true" signature="2996:3075" ph="INSERT INTO users... " />
+                <marker date="1518537863594" expanded="true" signature="4547:4554" ph="SELECT email... " />
+                <marker date="1518537863594" expanded="true" signature="4547:4594" ph="SELECT email... " />
+                <marker date="1518537863594" expanded="true" signature="4547:4668" ph="SELECT email... users" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="632">
+              <caret line="53" column="22" lean-forward="true" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+              <folding>
+                <element signature="n#style#0;n#strong#0;n#form#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,13 +163,14 @@
         <option value="$PROJECT_DIR$/web/signup/validate.jsp" />
         <option value="$PROJECT_DIR$/src/exceptions/LoginException.java" />
         <option value="$PROJECT_DIR$/web/pages/validate.jsp" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/data/DBHelper.java" />
         <option value="$PROJECT_DIR$/src/server/AddUser.java" />
         <option value="$PROJECT_DIR$/src/model/User.java" />
-        <option value="$PROJECT_DIR$/src/server/LoginUser.java" />
         <option value="$PROJECT_DIR$/src/model/JWTHelper.java" />
         <option value="$PROJECT_DIR$/src/filter/AuthFilter.java" />
+        <option value="$PROJECT_DIR$/src/filter/LoginFilter.java" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/src/server/LoginUser.java" />
       </list>
     </option>
   </component>
@@ -193,11 +219,6 @@
             <path>
               <item name="JSPSD" type="b2602c69:ProjectViewProjectNode" />
               <item name="JSPSD" type="462c0819:PsiDirectoryNode" />
-              <item name="notes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JSPSD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSPSD" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -234,12 +255,6 @@
               <item name="JSPSD" type="b2602c69:ProjectViewProjectNode" />
               <item name="JSPSD" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JSPSD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSPSD" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JSPSD" type="b2602c69:ProjectViewProjectNode" />
@@ -439,12 +454,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1518531258190</updated>
-      <workItem from="1518531260246" duration="9483000" />
+      <workItem from="1518531260246" duration="13522000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9483000" />
+    <option name="totallyTimeSpent" value="13522000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
@@ -461,19 +476,19 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.8905229" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.75" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22905028" sideWeight="0.49346405" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24980047" sideWeight="0.50653595" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22905028" sideWeight="0.50653595" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8104575" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59313726" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -490,14 +505,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/filter/AuthFilter.java</url>
-          <line>37</line>
-          <properties />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -590,14 +598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/ConnectionHolder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -612,23 +612,6 @@
           <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#checkDOB#0;class#User#0" expanded="false" />
-            <element signature="method#User#0;class#User#0" expanded="false" />
-            <element signature="method#validator#0;class#User#0" expanded="false" />
-            <marker date="1518537863594" expanded="true" signature="2996:3075" ph="INSERT INTO users... " />
-            <marker date="1518537863594" expanded="true" signature="4547:4554" ph="SELECT email... " />
-            <marker date="1518537863594" expanded="true" signature="4547:4594" ph="SELECT email... " />
-            <marker date="1518537863594" expanded="true" signature="4547:4668" ph="SELECT email... users" />
           </folding>
         </state>
       </provider>
@@ -661,11 +644,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/LoginUser.java">
+    <entry file="file://$PROJECT_DIR$/src/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="35" column="56" lean-forward="false" selection-start-line="35" selection-start-column="56" selection-end-line="35" selection-end-column="56" />
-          <folding />
+        <state relative-caret-position="248">
+          <caret line="132" column="28" lean-forward="true" selection-start-line="132" selection-start-column="28" selection-end-line="132" selection-end-column="28" />
+          <folding>
+            <element signature="method#checkDOB#0;class#User#0" expanded="false" />
+            <element signature="method#User#0;class#User#0" expanded="false" />
+            <element signature="method#validator#0;class#User#0" expanded="false" />
+            <marker date="1518537863594" expanded="true" signature="2996:3075" ph="INSERT INTO users... " />
+            <marker date="1518537863594" expanded="true" signature="4547:4554" ph="SELECT email... " />
+            <marker date="1518537863594" expanded="true" signature="4547:4594" ph="SELECT email... " />
+            <marker date="1518537863594" expanded="true" signature="4547:4668" ph="SELECT email... users" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -679,8 +670,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/filter/AuthFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="28" column="73" lean-forward="false" selection-start-line="28" selection-start-column="73" selection-end-line="28" selection-end-column="73" />
+        <state relative-caret-position="366">
+          <caret line="37" column="34" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="37" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/filter/LoginFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="30" column="9" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="30" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSPSD.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="53" column="22" lean-forward="true" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#strong#0;n#form#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/LoginUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="29" column="52" lean-forward="false" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
           <folding />
         </state>
       </provider>

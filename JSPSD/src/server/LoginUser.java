@@ -19,12 +19,6 @@ public class LoginUser extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
         Connection connection;
-        if(session.getAttribute("uid")!=null){
-            session.invalidate();
-            session.setMaxInactiveInterval(0);
-            response.sendRedirect("/");
-            return;
-        }
         String identifier = request.getParameter("identifier");
         String pass = request.getParameter("password");
         connection = DBHelper.getDBConnection(session);
@@ -33,9 +27,12 @@ public class LoginUser extends HttpServlet {
             session.setAttribute("username", results.get("username"));
             session.setAttribute("uid", results.get("username") + (String) results.get("email"));
             session.setAttribute("jwtID", JWTHelper.generateToken((String) results.get("username"), "jspsd", results.get("username") + (String) results.get("email")));
+            session.setAttribute("login-error", null);
             response.sendRedirect("/pages/success.jsp");
         }else{
-            response.getWriter().println("Access Denied with Message: " + results.get("error"));
+            System.out.println("Access Denied with Message: " + results.get("error"));
+            session.setAttribute("login-error", results.get("error"));
+            response.sendRedirect("/");
         }
 
     }
