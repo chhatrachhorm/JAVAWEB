@@ -2,13 +2,9 @@ package model;
 
 import exceptions.InvalidInputDataException;
 
-import java.sql.Connection;
+import java.sql.*;
 import java.sql.Date;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.List;
+import java.util.*;
 import java.util.regex.Pattern;
 
 public class User{
@@ -65,7 +61,7 @@ public class User{
             throw new InvalidInputDataException(error);
 
     }
-    public static User registerUser(
+    public static Map<String, Object> registerUser(
             String username,
             String password,
             String confirmPass,
@@ -73,7 +69,9 @@ public class User{
             String phoneNumber,
             String email,
             Connection connection)throws InvalidInputDataException{
+        Map<String, Object> results = new HashMap<>();
         User user = new User(username, password, confirmPass, dob, phoneNumber, email);
+        results.put("user", user);
         PreparedStatement newUser;
         String sql = "INSERT INTO users (username, email, password, phone_number) values (?, ?, ?, ?);";
         try {
@@ -85,18 +83,60 @@ public class User{
             newUser.setString(4, user.getPhoneNumber());
             newUser.execute();
             connection.commit();
+            results.put("success", true);
+            return results;
         } catch (SQLException e) {
             e.printStackTrace();
+            results.put("error", e.getMessage());
             try {
                 connection.rollback();
             } catch (SQLException e1) {
                 e1.printStackTrace();
             }
         }
-        return user;
+        results.put("success", false);
+        return results;
 
     }
 
+    public static Map<String, Object> getUser(String identifier, String actualPass, Connection connection) {
+        Map<String, Object> results = new HashMap<>();
+        results.put("success", false);
+        results.put("error", "Invalid username or email");
+        PreparedStatement gUser;
+        boolean useEmail = true;
+        if(!VALID_EMAIL.matcher(identifier).matches()){
+            if(!VALID_UN.matcher(identifier).matches()){
+                return results;
+            }else{
+                useEmail = false;
+            }
+        }
+        String whereTo = useEmail?"email":"username";
+        String sql = "SELECT " + whereTo + ", password, phone_number, " + (useEmail?"username":"email")+ " FROM users WHERE " + whereTo + " = ?;";
+        try {
+            gUser = connection.prepareStatement(sql);
+            gUser.setString(1, identifier);
+            ResultSet set = gUser.executeQuery();
+            if (set.next()){
+                String password = set.getString("password");
+                if(PasswordHelper.checkPassword(actualPass, password)){
+                    results.put("success", true);
+                    results.put("username", set.getString("username"));
+                    results.put("email", set.getString("email"));
+                    results.put("phoneNumber", set.getString("phone_number"));
+                }else{
+                    results.put("error", "Invalid " + whereTo + " or password");
+                }
+            }
+        } catch (Exception e) {
+            results.clear();
+            results.put("success", false);
+            results.put("error", e.getMessage());
+            e.printStackTrace();
+        }
+        return results;
+    }
     public String getUsername() {
         return username;
     }
