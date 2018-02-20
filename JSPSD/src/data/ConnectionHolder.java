@@ -30,7 +30,7 @@ public class ConnectionHolder implements HttpSessionBindingListener {
         // (or when the Session expires)
         try {
             if (connection != null) {
-                connection.rollback();  // abandon any uncomitted data
+                connection.rollback();  // abandon any uncommitted data
                 connection.close();
             }
         }

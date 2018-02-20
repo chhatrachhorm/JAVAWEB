@@ -1,5 +1,5 @@
 <%@ page import="java.util.Map" %>
-<%@ page import="model.JWTHelper" %><%--
+<%@ page import="model.helper.JWTHelper" %><%--
   Created by IntelliJ IDEA.
   User: chhatrachhorm
   Date: 2/1/18

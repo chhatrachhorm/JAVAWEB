@@ -1,4 +1,4 @@
-package model;
+package model.helper;
 
 import org.mindrot.jbcrypt.BCrypt;
 

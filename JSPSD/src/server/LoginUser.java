@@ -1,7 +1,7 @@
 package server;
 
 import data.DBHelper;
-import model.JWTHelper;
+import model.helper.JWTHelper;
 import model.User;
 
 import javax.servlet.ServletException;

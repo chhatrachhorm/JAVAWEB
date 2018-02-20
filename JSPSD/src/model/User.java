@@ -1,6 +1,7 @@
 package model;
 
 import exceptions.InvalidInputDataException;
+import model.helper.PasswordHelper;
 
 import java.sql.*;
 import java.sql.Date;
@@ -32,6 +33,7 @@ public class User{
         return true;
     }
 
+    public User(){}
     public User(String username, String password, String confirmPass, String dob, String phoneNumber, String email)
     throws InvalidInputDataException
     {
@@ -42,6 +44,7 @@ public class User{
         this.phoneNumber = phoneNumber;
         this.email = email;
     }
+
     private void validator(String username, String password, String confirmPass, String dob, String phoneNumber, String email)
             throws InvalidInputDataException{
         List<String> error = new ArrayList<>();
@@ -61,6 +64,7 @@ public class User{
             throw new InvalidInputDataException(error);
 
     }
+
     public static Map<String, Object> registerUser(
             String username,
             String password,

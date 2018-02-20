@@ -17,7 +17,7 @@ public class DBHelper {
                 try {
                     Class.forName("com.mysql.cj.jdbc.Driver");
                     Connection getConnection = DriverManager.getConnection(
-                            "jdbc:mysql://localhost:3306/jspsd", "jspsd", "R*twinklestar15+");
+                            "jdbc:mysql://localhost:3308/jspsd", "jspsd", "R*twinklestar15+");
                     holder = new ConnectionHolder(getConnection);
                     session.setAttribute("servletapp.connection", holder);
                 } catch (SQLException e) {

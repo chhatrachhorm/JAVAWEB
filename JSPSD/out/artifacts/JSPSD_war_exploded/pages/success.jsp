@@ -21,7 +21,12 @@
         </a></button><br>
         <button><a href="../excepts/runtime.jsp">
             Click Here to Go to Runtime Exception
-        </a></button>
+        </a></button><br>
+        <button>
+            <a href="../usebean/form.jsp">
+                Click Here to Go to JSP Bean
+            </a>
+        </button>
     </div>
     <a href="destroy.jsp"><button>Log Out</button></a>
 </body>
