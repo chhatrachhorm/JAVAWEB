@@ -77,7 +77,7 @@ public class User{
         User user = new User(username, password, confirmPass, dob, phoneNumber, email);
         results.put("user", user);
         PreparedStatement newUser;
-        String sql = "INSERT INTO users (username, email, password, phone_number) values (?, ?, ?, ?);";
+        String sql = "INSERT INTO users (username, email, password, phone_number, dob) values (?, ?, ?, ?, ?);";
         try {
             connection.setAutoCommit(false);
             newUser = connection.prepareStatement(sql);
@@ -85,6 +85,7 @@ public class User{
             newUser.setString(2, user.getEmail());
             newUser.setString(3, PasswordHelper.hashPassword(user.getPassword()));
             newUser.setString(4, user.getPhoneNumber());
+            newUser.setDate(5, Date.valueOf(user.getDob()));
             newUser.execute();
             connection.commit();
             results.put("success", true);

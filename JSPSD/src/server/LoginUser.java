@@ -21,7 +21,12 @@ public class LoginUser extends HttpServlet {
         Connection connection;
         String identifier = request.getParameter("identifier");
         String pass = request.getParameter("password");
+
+
         connection = DBHelper.getDBConnection(session);
+
+
+
         Map<String, Object> results = User.getUser(identifier, pass, connection);
         if((boolean) results.get("success")){
             session.setAttribute("username", results.get("username"));

@@ -28,8 +28,11 @@ public class AddUser extends HttpServlet {
         String dob = request.getParameter("dob");
         System.out.println("LOG: " + username + " " + password + " " + confirm_pass + " " + phone + " " + email + " " + dob);
         PrintWriter out = response.getWriter();
+
+        // connect database
         HttpSession session = request.getSession();
         Connection connection;
+
         try {
             connection = DBHelper.getDBConnection(session);
             Map<String, Object> results = User.registerUser(username, password, confirm_pass, dob, phone, email, connection);
