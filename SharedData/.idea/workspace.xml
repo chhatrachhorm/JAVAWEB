@@ -15,6 +15,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JSPSD/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../JSPSD/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JSPSD/src/model/User.java" afterPath="$PROJECT_DIR$/../JSPSD/src/model/User.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JSPSD/src/server/AddUser.java" afterPath="$PROJECT_DIR$/../JSPSD/src/server/AddUser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JSPSD/src/server/LoginUser.java" afterPath="$PROJECT_DIR$/../JSPSD/src/server/LoginUser.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JSPSD/web/index.jsp" afterPath="$PROJECT_DIR$/../JSPSD/web/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -401,16 +402,15 @@
       <updated>1518665229676</updated>
       <workItem from="1518665231841" duration="13520000" />
       <workItem from="1518830056604" duration="16000" />
-      <workItem from="1519179152410" duration="2156000" />
+      <workItem from="1519179152410" duration="2199000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15692000" />
+    <option name="totallyTimeSpent" value="15735000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
