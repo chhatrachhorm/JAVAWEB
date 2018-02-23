@@ -1,4 +1,4 @@
-package model.helper;
+package helper.auth;
 
 import org.mindrot.jbcrypt.BCrypt;
 

@@ -1,7 +1,7 @@
 <%@ page import="java.util.Map" %>
-<%@ page import="model.helper.JWTHelper" %><%--
+<%@ page import="helper.auth.JWTHelper" %><%--
   Created by IntelliJ IDEA.
-  User: chhatrachhorm
+  UserDAO: chhatrachhorm
   Date: 2/1/18
   Time: 10:13 AM
   To change this template use File | Settings | File Templates.

@@ -1,6 +1,6 @@
 package filter;
 
-import model.helper.JWTHelper;
+import helper.auth.JWTHelper;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;

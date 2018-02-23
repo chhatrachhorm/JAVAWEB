@@ -1,9 +1,9 @@
 package server.auth;
 
 
-import data.DBHelper;
+import data.helper.DBHelper;
 import exceptions.InvalidInputDataException;
-import model.User;
+import data.model.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -38,21 +38,21 @@ public class AddUser extends HttpServlet {
             Map<String, Object> results = User.registerUser(username, password, confirm_pass, dob, phone, email, connection);
             if((boolean) results.get("success")){
                 User user = (User) results.get("user");
-                System.out.println("Added New User " + user.toString());
+                System.out.println("Added New UserDAO " + user.toString());
                 request.setAttribute("identifier", user.getEmail());
                 request.setAttribute("password", user.getPassword());
                 session.setAttribute("sign-up-error", null);
                 request.getRequestDispatcher("/loginUser").forward(request, response);
             }else{
                 User user = (User) results.get("user");
-                System.out.println("Cannot add a New User " + user.toString() + "\nReason: " + results.get("error"));
+                System.out.println("Cannot add a New UserDAO " + user.toString() + "\nReason: " + results.get("error"));
                 session.setAttribute("sign-up-error", "Error in adding a new user due to " + results.get("error"));
                 response.sendRedirect("/");
             }
         } catch (InvalidInputDataException e) {
             String message = e.getMessage();
-            System.out.println("New User Exception: " + message);
-            out.print("New User Exception: " + message);
+            System.out.println("New UserDAO Exception: " + message);
+            out.print("New UserDAO Exception: " + message);
             out.print("Error List " + e.getErrorList());
             int errorSize = e.getErrorList().size();
             if(errorSize == 1){

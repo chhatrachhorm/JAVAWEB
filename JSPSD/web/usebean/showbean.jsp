@@ -11,7 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-    <jsp:useBean class="model.User" id="user"/>
+    <jsp:useBean class="data.model.User" id="user"/>
     <jsp:setProperty name="user" property="username"/>
     <jsp:setProperty name="user" property="email"/>
 

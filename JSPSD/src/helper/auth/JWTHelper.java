@@ -1,4 +1,4 @@
-package model.helper;
+package helper.auth;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtBuilder;

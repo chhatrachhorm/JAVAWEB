@@ -1,8 +1,8 @@
 package server.auth;
 
-import data.DBHelper;
-import model.helper.JWTHelper;
-import model.User;
+import data.helper.DBHelper;
+import helper.auth.JWTHelper;
+import data.model.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

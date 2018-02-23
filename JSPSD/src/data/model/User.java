@@ -1,9 +1,8 @@
-package model;
+package data.model;
 
 import exceptions.InvalidInputDataException;
-import model.helper.PasswordHelper;
+import helper.auth.PasswordHelper;
 
-import javax.servlet.http.HttpSession;
 import java.sql.*;
 import java.sql.Date;
 import java.util.*;
@@ -80,7 +79,7 @@ public class User{
             String dob,
             String phoneNumber,
             String email,
-            Connection connection)throws InvalidInputDataException{
+            Connection connection)throws InvalidInputDataException {
         Map<String, Object> results = new HashMap<>();
         User user = new User(username, password, confirmPass, dob, phoneNumber, email);
         results.put("user", user);
@@ -112,7 +111,11 @@ public class User{
 
     }
 
-    public static Map<String, Object> getUser(String identifier, String actualPass, Connection connection) {
+    public static Map<String, Object> getUser(
+            String identifier,
+            String actualPass,
+            Connection connection
+    ) {
         Map<String, Object> results = new HashMap<>();
         results.put("success", false);
         results.put("error", "Invalid username or email");
@@ -141,7 +144,7 @@ public class User{
                             set.getDate("dob").toString(),
                             set.getString("phone_number"),
                             set.getString("email")
-                            );
+                    );
                     System.out.println(currentUser.toString());
                     results.put("currentUser", currentUser);
                 }else{
@@ -160,6 +163,9 @@ public class User{
         String sql = "DELETE FROM users WHERE email = '" + currentUser.getEmail() + "' LIMIT 1";
         return connection.createStatement().executeUpdate(sql) == 1;
     }
+
+
+
     public String getUsername() {
         return username;
     }
@@ -201,7 +207,7 @@ public class User{
 
     @Override
     public String toString() {
-        return "User: {" + "\n"
+        return "UserDAO: {" + "\n"
             + " username: " + username + ",\n"
             + " password: " + password + ",\n"
             + " dob: " + dob + ",\n"
