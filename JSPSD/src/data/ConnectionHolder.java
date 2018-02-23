@@ -10,11 +10,6 @@ public class ConnectionHolder implements HttpSessionBindingListener {
 
     public ConnectionHolder(Connection connection){
         this.connection = connection;
-        try{
-            connection.setAutoCommit(false);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
     }
 
     public Connection getConnection() {

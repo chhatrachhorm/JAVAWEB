@@ -7,9 +7,18 @@
 .no-mb {
     margin-bottom: 0;
 }
+.no-ma {
+    margin: 0;
+}
+.no-pa{
+    padding: 0;
+}
 .my-wrapper {
     height: 100%;
 }
 .my-whole-wrapper{
+    height: 100vh;
+}
+.full-height {
     height: 100vh;
 }

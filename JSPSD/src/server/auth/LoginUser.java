@@ -1,4 +1,4 @@
-package server;
+package server.auth;
 
 import data.DBHelper;
 import model.helper.JWTHelper;
@@ -22,16 +22,18 @@ public class LoginUser extends HttpServlet {
         String identifier = request.getParameter("identifier");
         String pass = request.getParameter("password");
 
-
+        if((identifier == null || identifier.isEmpty()) || (pass == null || pass.isEmpty())){
+            identifier = (String) request.getAttribute("identifier");
+            pass = (String) request.getAttribute("password");
+        }
         connection = DBHelper.getDBConnection(session);
-
-
 
         Map<String, Object> results = User.getUser(identifier, pass, connection);
         if((boolean) results.get("success")){
             session.setAttribute("username", results.get("username"));
             session.setAttribute("uid", results.get("username") + (String) results.get("email"));
             session.setAttribute("jwtID", JWTHelper.generateToken((String) results.get("username"), "jspsd", results.get("username") + (String) results.get("email")));
+            session.setAttribute("currentUser", results.get("currentUser"));
             session.setAttribute("login-error", null);
             response.sendRedirect("/pages/success.jsp");
         }else{

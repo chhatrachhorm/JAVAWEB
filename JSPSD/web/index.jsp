@@ -54,6 +54,14 @@
                       <label>Phone Number: <input type="tel" name="phone"></label><br>
                       <label>Email: <input type="email" name="email"></label><br>
                       <label>Date of Birth: <input type="date" name="dob"></label><br>
+                      <%
+                          if(session.getAttribute("sign-up-error") != null){ %>
+                      <strong style="color: red">
+                          <%= session.getAttribute("sign-up-error")%>
+                      </strong><br>
+                      <%
+                          }
+                      %>
                       <button type="submit">Sign Up</button>
                   </form>
               </div>

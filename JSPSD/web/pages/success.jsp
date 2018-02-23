@@ -28,6 +28,18 @@
             </a>
         </button>
     </div>
+    <div>
+        <h1>Your Dashboard</h1>
+        <button><a href="${pageContext.request.contextPath}/deleteUser">Delete Your Account?</a> </button>
+        <%
+            if(session.getAttribute("delete-user-error") != null){ %>
+        <strong style="color: red">
+            <%= session.getAttribute("delete-user-error")%>
+        </strong><br>
+        <%
+            }
+        %>
+    </div>
     <a href="destroy.jsp"><button>Log Out</button></a>
 </body>
 </html>

@@ -1,4 +1,4 @@
-package server;
+package server.auth;
 
 
 import data.DBHelper;
@@ -39,18 +39,33 @@ public class AddUser extends HttpServlet {
             if((boolean) results.get("success")){
                 User user = (User) results.get("user");
                 System.out.println("Added New User " + user.toString());
-                out.print("Added new user: " + user.toString());
+                request.setAttribute("identifier", user.getEmail());
+                request.setAttribute("password", user.getPassword());
+                session.setAttribute("sign-up-error", null);
+                request.getRequestDispatcher("/loginUser").forward(request, response);
             }else{
                 User user = (User) results.get("user");
-                System.out.println("Added New User " + user.toString());
-                out.print("Cannot add a new user: " + user.toString());
-                out.print("Reason: " + results.get("error"));
+                System.out.println("Cannot add a New User " + user.toString() + "\nReason: " + results.get("error"));
+                session.setAttribute("sign-up-error", "Error in adding a new user due to " + results.get("error"));
+                response.sendRedirect("/");
             }
         } catch (InvalidInputDataException e) {
             String message = e.getMessage();
             System.out.println("New User Exception: " + message);
             out.print("New User Exception: " + message);
             out.print("Error List " + e.getErrorList());
+            int errorSize = e.getErrorList().size();
+            if(errorSize == 1){
+                session.setAttribute("sign-up-error", "You got an error in " + e.getErrorList().get(0));
+            }else{
+                StringBuilder errorMessage = new StringBuilder();
+                errorMessage.append("You got errors in ");
+                for(String s: e.getErrorList()){
+                    errorMessage.append(s).append(", ");
+                }
+                session.setAttribute("sign-up-error", errorMessage.toString().substring(0, errorMessage.toString().length() - 2));
+            }
+            response.sendRedirect("/");
         }
     }
 

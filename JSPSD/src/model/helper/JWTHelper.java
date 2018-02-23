@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class JWTHelper {
-    private static String key = "fjsljflsjfklfsfs5f465s415s15f41sfsvsfs4fs1fs1f5654s";
+    private static String key = "key.keen.kit.java.key.secret@tra.com";
     public static String generateToken(String subject, String issuer, String id){
         SignatureAlgorithm signatureAlgorithm = SignatureAlgorithm.HS256;
         long now = System.currentTimeMillis();

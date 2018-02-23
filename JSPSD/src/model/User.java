@@ -3,6 +3,7 @@ package model;
 import exceptions.InvalidInputDataException;
 import model.helper.PasswordHelper;
 
+import javax.servlet.http.HttpSession;
 import java.sql.*;
 import java.sql.Date;
 import java.util.*;
@@ -43,6 +44,13 @@ public class User{
         this.dob = dob;
         this.phoneNumber = phoneNumber;
         this.email = email;
+    }
+    public User(String username, String dob, String phoneNumber, String email){
+        this.username = username;
+        this.dob = dob;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+        this.password = null;
     }
 
     private void validator(String username, String password, String confirmPass, String dob, String phoneNumber, String email)
@@ -118,7 +126,7 @@ public class User{
             }
         }
         String whereTo = useEmail?"email":"username";
-        String sql = "SELECT " + whereTo + ", password, phone_number, " + (useEmail?"username":"email")+ " FROM users WHERE " + whereTo + " = ?;";
+        String sql = "SELECT " + whereTo + ", password, phone_number, dob, " + (useEmail?"username":"email")+ " FROM users WHERE " + whereTo + " = ?;";
         try {
             gUser = connection.prepareStatement(sql);
             gUser.setString(1, identifier);
@@ -128,8 +136,14 @@ public class User{
                 if(PasswordHelper.checkPassword(actualPass, password)){
                     results.put("success", true);
                     results.put("username", set.getString("username"));
-                    results.put("email", set.getString("email"));
-                    results.put("phoneNumber", set.getString("phone_number"));
+                    User currentUser = new User(
+                            set.getString("username"),
+                            set.getDate("dob").toString(),
+                            set.getString("phone_number"),
+                            set.getString("email")
+                            );
+                    System.out.println(currentUser.toString());
+                    results.put("currentUser", currentUser);
                 }else{
                     results.put("error", "Invalid " + whereTo + " or password");
                 }
@@ -142,10 +156,13 @@ public class User{
         }
         return results;
     }
+    public static boolean deleteUser(User currentUser, Connection connection) throws SQLException {
+        String sql = "DELETE FROM users WHERE email = '" + currentUser.getEmail() + "' LIMIT 1";
+        return connection.createStatement().executeUpdate(sql) == 1;
+    }
     public String getUsername() {
         return username;
     }
-
     public void setUsername(String username) {
         this.username = username;
     }
