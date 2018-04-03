@@ -30,14 +30,14 @@ public class GlobalController extends HttpServlet {
                 Integer year = Integer.valueOf(request.getParameter("year"));
                 Book b = new Book(null, ssn, title, author, year);
                 result = bookDao.insert(b);
-                if(result == -1){
+                if(result == -1 || result == 0){
                     writer.print("ERROR In adding a new book");
                 }else writer.print("Success in Adding a new book");
                 break;
             case "delete":
                 ssn = request.getParameter("ssn");
                 result = bookDao.delete(ssn);
-                if(result == -1){
+                if(result == -1 || result == 0){
                     writer.print("ERROR In deleting the book");
                 }else writer.print("Success in deleting the book");
                 break;
@@ -57,7 +57,7 @@ public class GlobalController extends HttpServlet {
                 String updateTitle = request.getParameter("title");
                 ssn = request.getParameter("ssn");
                 result = bookDao.updateTitle(ssn, updateTitle);
-                if(result == -1){
+                if(result == -1 || result == 0){
                     writer.print("ERROR in updating the book");
                 }else writer.print("Success in updating the book");
                 break;

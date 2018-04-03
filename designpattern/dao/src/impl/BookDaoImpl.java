@@ -84,7 +84,7 @@ public class BookDaoImpl implements BookDAO {
 
     @Override
     public List<Book> search(String title) {
-        String sql = "SELECT * FROM books where title ='" + title +"';";
+        String sql = "SELECT * FROM books where title LIKE '%" + title +"%';";
         ArrayList<Book> books = new ArrayList<>();
         try {
             ResultSet resultSet = connection.prepareStatement(sql).executeQuery();

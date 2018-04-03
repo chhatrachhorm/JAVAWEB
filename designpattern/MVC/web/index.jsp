@@ -19,6 +19,8 @@
         <label>Email: <input type="email" name="email"></label><br>
         <label>Password: <input type="password" name="password"></label><br>
         <button type="submit">Submit</button>
+
+        <%--TO SHOW ANY REGISTRATION ERROR--%>
         <%
           if(session.getAttribute("info-error") != null){ %>
         <strong style="color: red">

@@ -18,6 +18,7 @@ public class LoginSession extends HttpServlet
             HttpSession loginSession = req.getSession();
             loginSession.setAttribute("username", name);
             loginSession.setAttribute("password", pass);
+            resp.getWr
             RequestDispatcher rd = req.getRequestDispatcher("/display-session");
             rd.forward(req, resp);
         }else{

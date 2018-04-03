@@ -11,6 +11,8 @@
         <filter-name>CountingFilter</filter-name>
         <filter-class>filters.CountingFilter</filter-class>
     </filter>
+
+
     <session-config>
         <session-timeout>30</session-timeout>
     </session-config>
