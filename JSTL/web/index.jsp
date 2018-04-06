@@ -1,4 +1,6 @@
-<%--
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="model.User" %>
+<%@ page import="java.util.Random" %><%--
   Created by IntelliJ IDEA.
   User: chhat
   Date: 3/29/2018
@@ -29,6 +31,30 @@
     <%--For database--%>
     <s:setDataSource var="db" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3308/jspsd" user="jspsd" password="R*twinklestar15+"/>
 
+    <%
+      ArrayList<User> new_users = new ArrayList<>();
+      for(int i = 0; i<5; i++) {
+        // add dump data to list
+        User user = new User();
+        user.setUsername(user.generateSalt(6, false));
+        user.setPassword(user.generateSalt(6, false));
+        user.setPhoneNumber(user.generateSalt(6, true));
+        user.setEmail(user.generateSalt(5, false) + "@" + user.generateSalt(3, false) + "." + user.generateSalt(2, false));
+        user.setDob("1998-12-29");
+        new_users.add(user);
+      }
+      pageContext.setAttribute("new_users", new_users);
+    %>
+    <%--update query to update/delete/insert--%>
+    <c:forEach items="${new_users}" var="user">
+      <s:update dataSource="${db}" var="count">
+        insert into users (username, email, password, phone_number, dob) value
+        ('${user.username}', '${user.email}', '${user.password}', '${user.phoneNumber}', '${user.dob}');
+      </s:update>
+    </c:forEach>
+
+
+    <%--query which return result set--%>
     <s:query dataSource="${db}" var="rs">
       select * from users;
     </s:query>
@@ -39,6 +65,7 @@
       <c:out value="${tbl.email}" />
       <br>
     </c:forEach>
+
 
   </body>
 </html>

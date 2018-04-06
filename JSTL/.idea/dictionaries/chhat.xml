@@ -2,6 +2,7 @@
   <dictionary name="chhat">
     <words>
       <w>jstl</w>
+      <w>saltchars</w>
     </words>
   </dictionary>
 </component>
