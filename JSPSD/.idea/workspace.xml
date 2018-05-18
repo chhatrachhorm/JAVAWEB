@@ -7,25 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da7035c9-a73a-41ee-9338-47b59e54f222" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../designpattern/dao/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designpattern/dao/out/artifacts/dao_war_exploded/WEB-INF/classes/impl/BookDaoImpl.class" afterPath="$PROJECT_DIR$/../designpattern/dao/out/artifacts/dao_war_exploded/WEB-INF/classes/impl/BookDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designpattern/dao/out/artifacts/dao_war_exploded/WEB-INF/classes/server/GlobalController.class" afterPath="$PROJECT_DIR$/../designpattern/dao/out/artifacts/dao_war_exploded/WEB-INF/classes/server/GlobalController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designpattern/dao/out/production/dao/impl/BookDaoImpl.class" afterPath="$PROJECT_DIR$/../designpattern/dao/out/production/dao/impl/BookDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designpattern/dao/out/production/dao/server/GlobalController.class" afterPath="$PROJECT_DIR$/../designpattern/dao/out/production/dao/server/GlobalController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BasicRouting/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../BasicRouting/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BasicRouting/src/Server/LoginSession.java" afterPath="$PROJECT_DIR$/../BasicRouting/src/Server/LoginSession.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BasicRouting/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/../BasicRouting/web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/excepts/numberresult.jsp" afterPath="$PROJECT_DIR$/web/excepts/numberresult.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SharedData/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../SharedData/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SharedData/web/pages/validate.jsp" afterPath="$PROJECT_DIR$/../SharedData/web/pages/validate.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designpattern/MVC/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../designpattern/MVC/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designpattern/MVC/web/index.jsp" afterPath="$PROJECT_DIR$/../designpattern/MVC/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designpattern/dao/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../designpattern/dao/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designpattern/dao/out/artifacts/dao_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/../designpattern/dao/out/artifacts/dao_war_exploded/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designpattern/dao/src/impl/BookDaoImpl.java" afterPath="$PROJECT_DIR$/../designpattern/dao/src/impl/BookDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designpattern/dao/src/server/GlobalController.java" afterPath="$PROJECT_DIR$/../designpattern/dao/src/server/GlobalController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designpattern/dao/web/index.jsp" afterPath="$PROJECT_DIR$/../designpattern/dao/web/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/server/auth/LoginUser.java" afterPath="$PROJECT_DIR$/src/server/auth/LoginUser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JSTL/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../JSTL/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JSTL/web/index.jsp" afterPath="$PROJECT_DIR$/../JSTL/web/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,7 +35,7 @@
       <file leaf-file-name="error.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/excepts/error.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="0">
               <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="21" selection-end-column="7" />
               <folding />
             </state>
@@ -68,11 +52,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddUser.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AddUser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/server/auth/AddUser.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
               <caret line="38" column="12" lean-forward="false" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginUser.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/server/auth/LoginUser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="19" column="122" lean-forward="false" selection-start-line="19" selection-start-column="122" selection-end-line="19" selection-end-column="122" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="destroy.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/pages/destroy.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -145,13 +149,13 @@
         <option value="$PROJECT_DIR$/src/server/auth/DeleteUser.java" />
         <option value="$PROJECT_DIR$/src/helper/helper/PasswordHelper.java" />
         <option value="$PROJECT_DIR$/src/dao.java" />
-        <option value="$PROJECT_DIR$/src/server/auth/LoginUser.java" />
         <option value="$PROJECT_DIR$/src/data/dao/User.java" />
         <option value="$PROJECT_DIR$/src/data/api/UserOperation.java" />
         <option value="$PROJECT_DIR$/src/data/model/User.java" />
         <option value="$PROJECT_DIR$/src/data/dao/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/server/auth/AddUser.java" />
         <option value="$PROJECT_DIR$/web/excepts/numberresult.jsp" />
+        <option value="$PROJECT_DIR$/src/server/auth/LoginUser.java" />
       </list>
     </option>
   </component>
@@ -168,7 +172,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="21" />
     <option name="y" value="29" />
     <option name="width" value="1366" />
@@ -190,6 +194,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -231,14 +236,19 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="excepts" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="JSPSD" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSPSD" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -528,14 +538,15 @@
       <workItem from="1521182076073" duration="378000" />
       <workItem from="1521636602617" duration="4343000" />
       <workItem from="1521724376002" duration="1083000" />
+      <workItem from="1524147377727" duration="1348000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43805000" />
+    <option name="totallyTimeSpent" value="45153000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -552,7 +563,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32686085" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20953101" sideWeight="0.487055" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21255673" sideWeight="0.487055" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2397882" sideWeight="0.512945" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14220877" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -617,24 +628,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/data/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="18" lean-forward="false" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-          <folding>
-            <element signature="method#checkDOB#0;class#User#0" expanded="false" />
-            <element signature="method#User#1;class#User#0" expanded="false" />
-            <element signature="method#User#2;class#User#0" expanded="false" />
-            <element signature="method#validator#0;class#User#0" expanded="false" />
-            <element signature="method#registerUser#0;class#User#0" expanded="false" />
-            <element signature="method#deleteUser#0;class#User#0" expanded="false" />
-            <marker date="1519398801911" expanded="true" signature="3301:3388" ph="INSERT INTO users... " />
-            <marker date="1519398801911" expanded="true" signature="4963:5089" ph="SELECT email... users" />
-            <marker date="1519398801911" expanded="true" signature="6445:6517" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/pages/success.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -844,13 +837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/auth/LoginUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/helper/ConnectionHolder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -901,13 +887,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/destroy.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/usebean/form.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -941,7 +920,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/excepts/error.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="0">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="21" selection-end-column="7" />
           <folding />
         </state>
@@ -975,6 +954,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="38" column="12" lean-forward="false" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/pages/destroy.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/javax.servlet.jsp.jar!/javax/servlet/jsp/PageContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="43" column="48" lean-forward="true" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/auth/LoginUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="19" column="122" lean-forward="false" selection-start-line="19" selection-start-column="122" selection-end-line="19" selection-end-column="122" />
           <folding />
         </state>
       </provider>

@@ -29,7 +29,13 @@
     <c:import url="https://i-out.io"/>
 
     <%--For database--%>
-    <s:setDataSource var="db" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3308/jspsd" user="jspsd" password="R*twinklestar15+"/>
+    <s:setDataSource
+            var="db"
+            driver="com.mysql.jdbc.Driver"
+            url="jdbc:mysql://localhost:3308/jspsd"
+            user="jspsd"
+            password="R*twinklestar15+"
+    />
 
     <%
       ArrayList<User> new_users = new ArrayList<>();
